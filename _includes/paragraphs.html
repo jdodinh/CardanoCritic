@@ -1,0 +1,16 @@
+<section class="spotlight">
+<div class="image">
+<img src="{{ site.baseurl }}/images/CarWaveCombo.jpeg"
+        alt="{% if my_page.image_alt %}{{ my_page.image_alt }}{% else %}Image for {{ my_page.title | escape }}{% endif %}" />
+
+</div>
+<div class="content-wrap">
+
+<div class="content">
+<!-- <h2>{{ my_page.title }}</h2> -->
+{% include introduction.html %}
+<!-- <p>{{ include introduction.html | markdownify | strip_html | strip_newlines | escape_once }}</p> -->
+</div>
+
+</div>
+</section>
