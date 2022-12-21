@@ -14,12 +14,13 @@
 title: _site name_
 description: _description_
 owner:
-  name: _your name_ # or company name
+  name: CardanoADA # or company name
   url: "http://example.com" # your URL
 first_published: 2010 # if migrating another site, the year of your first publish
                       # Must be a 4-digit integer year (math is used on it)
-url: "http://example.com" # the base hostname & protocol for this site
-baseurl: "" # the subpath of your site, e.g. /blog
+domain: jdodinh.github.io
+url: http://jdodinh.github.io # the base hostname & protocol for this site
+baseurl: /CardanoCritic # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
@@ -37,9 +38,9 @@ closing-para: _Your detailed closing_
 # on all pages (and the first three you list display with greeting, if included)
 social:
   twitter: https://twitter.com/_username_
-  github: https://github.com/_username_
-  linkedin-square: https://linkedin.com/in/_username_
-  facebook-official: https://facebook.com/_username_
+  github: https://github.com/jdodinh
+  # linkedin-square: https://linkedin.com/in/_username_
+  # facebook-official: https://facebook.com/_username_
   #google-plus-square: https://plus.google.com/u/0/+_username_
   email: /contact/ # you can configure and use this contact page or use your email addy
   #flickr:
