@@ -107,6 +107,10 @@ other-image-credit: All other images are public domain.
 # 'lic' values correspond to the keys in the license hash above
 #
 image-credit:
+  # - src : /images/banner.jpg
+  #   by  : 
+  #   url : https://wallpaperaccess.com/full/2000204.jpg
+  #   lic :
   - src : /images/caustic_light.jpg
     by  : fdecomite
     url : https://www.flickr.com/photos/fdecomite/1907376527/
@@ -115,7 +119,7 @@ image-credit:
     by  : froderik
     url : https://www.flickr.com/photos/froderik/9355090806/
     lic : ccbsa2
-  - src : /images/banner.jpg
+  - src : /images/banner_old.jpg
     by  : Konstaninos Dafallas
     url : https://www.flickr.com/photos/72906133@N00/4011647045/
     lic : ccb2
