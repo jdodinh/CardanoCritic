@@ -11,8 +11,8 @@
 # (Using that method instead of site.owner, in case your posts get cloned with your repo.)
 
 # Site settings
-title: Goofy Critic
-description: _description_
+title: "CMU analysis: recipe for a successful movie"
+description: Camille Arruat, Robert Pieniuta, Rado Todorov, Jeremi Do Dinh
 owner:
   name: CardanoADA # or company name
   url: "http://example.com" # your URL
@@ -29,7 +29,7 @@ lang: en-us # used in HTML lang attributes
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: It was a clear and sunny day
+  title: Goal
   text: Hi
 
 # - displayed at the bottom
