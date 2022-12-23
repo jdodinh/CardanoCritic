@@ -6,7 +6,27 @@
 
     <div class="content">
       <div style="text-align: left">
-        <p>Hi</p>
+        <h1>EDA and Spatio-temporal analysis</h1>
+        <p>To get more insights and understand trends, we are interested in how the features that generally lead to a successful movie, evolve over time and if they change depending on the country.</p>
+        <p>We start by visualizing the distribution of movie releases through the years.</p>
+        <p>The oldest movie from the dataset was released in 1888, and the most recent is from 2016. However, from the histogram, we can observe that a large proportion of our dataset contains movies released after 1990. This drastic increase in the amount of movies produced in the past 40 years is most likely caused by recent technological advancements, which enabled the movie industry to become ubiquitous. Due to this, we expect the result from this period to be a better representation of the real world, when conducting the temporal analysis.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<section class="spotlight">
+  <div class="image">
+    {% include histogram_of_the_weighted_ratings.html %}
+  </div>
+  <div class="content-wrap">
+
+    <div class="content">
+      <div style="text-align: left">
+        <h1>What is a successful movie?</h1>
+          <p>As explained previously, we think that the weighted rating is a more meaningful measurement of success that the average rating, as it considers the rating, but also the number of votes.</p>
+          <p>For this reason, in this analysis, we decided to consider that a movie is successful if its weighted rating is above a certain threshold. The value for this threshold was determined so that 5% of our dataset are successful movies. Thus, we chose a threshold of 6.61, which corresponds to 3290 movies.</p>
       </div>
     </div>
 
