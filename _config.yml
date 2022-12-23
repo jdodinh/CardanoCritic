@@ -11,7 +11,7 @@
 # (Using that method instead of site.owner, in case your posts get cloned with your repo.)
 
 # Site settings
-title: "CMU analysis: recipe for a successful movie"
+title: "CMU Analysis: Recipe for a Successful Movie"
 description: Camille Arruat, Robert Pieniuta, Rado Todorov, Jeremi Do Dinh
 owner:
   name: CardanoADA # or company name
