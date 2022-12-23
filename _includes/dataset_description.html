@@ -1,0 +1,64 @@
+<section class="spotlight">
+  <div class="image">
+    <img src="{{ site.baseurl }}/images/CarWaveCombo.jpeg"
+         alt="{% if my_page.image_alt %}{{ my_page.image_alt }}{% else %}Image for {{ my_page.title | escape }}{% endif %}" />
+
+  </div>
+  <div class="content-wrap">
+
+    <div class="content">
+      <div style="text-align: left">
+        <h1>Dataset description, dataset extension and Preprocessing</h1>
+        <p>We have been provided with the CMU dataset which can be obtained at the following link. Despite the rich content of the dataset there were several aspects which we sought to improve in order to enrich our data, with features which we deemed relevant to our particular topic.
+        </p>
+        <p>
+          One of the promising options for such an external source is the IMDb dataset. The dataset was available for us to download at the following link. Thanks to this we were able to merge the two datasets on the name and release date columns, and allowed us to obtain additional features.
+        </p>
+        <p>
+          Additionally to this we took advantage of the free trial of IMDb Pro. This allowed us to scrape additional relevant data including: budgets, MPAA rating, Box office revenue, Directors, writers, producers, composers, cinematographers and editors.
+        </p>
+     </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="spotlight">
+    <div class="content">
+      <div style="text-align: left">
+        <p> After a thorough data cleaning procedure described and justified in detail in the Preprocessing.ipynb notebook, we obtain a dataset containing the following columns:</p>
+        <table>
+          <tr>
+            <th> Wikipedia ID</th>
+            <th> Freebase ID</th>
+            <th> Name</th>
+            <th> Release date</th>
+            <th> Runtime</th>
+            <th> Languages</th>
+            <th> Countries</th>
+            <th> Genres</th>
+            <th> IMDb ID</th>
+            <th> averageRating</th>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th> number of votes</th>
+            <th> Budgets</th>
+            <th> Mpaa</th>
+            <th> Box offices</th>
+            <th> Directors</th>
+            <th> Writers</th>
+            <th> Producers</th>
+            <th> Composers</th>
+            <th> Cinematographers</th>
+            <th> Editors</th>
+            <th> Weighted Rating</th>
+          </tr>
+        </table>
+
+      </div>
+  </div>
+
+</section>
