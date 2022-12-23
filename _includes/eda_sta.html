@@ -103,3 +103,113 @@
   </div>
 
 </section>
+
+<section class="spotlight">
+  <div class="image">
+    <img src="{{ site.baseurl }}/images/best_weightedRating_Genres_proportion_over_time.png"
+         alt="{% if my_page.image_alt %}{{ my_page.image_alt }}{% else %}Image for {{ my_page.title | escape }}{% endif %}" />
+
+  </div>
+  <div class="content-wrap">
+
+    <div class="content">
+      <div style="text-align: left">
+        <h1>Comparison between the evolution over time of the genre distribution computed on the overall data and the one computed on successful movies only</h1>
+        <p>As the last step of this temporal analysis, we want to check if the trend over the years for the most frequently used genres is different according to whether the movies are successful or not. We plot the distribution over time for the 10 most frequent genres appearing in our dataset, computed on the overall dataset (left) and computed on the successful movies only (right).</p>
+        <p>From these two plots, we see almost no difference between the distribution of genres in the original dataset compared to the dataset containing only the successful movies. This might be due to the fact that when a movie is successful, movies that are released not long after may try to take inspiration from it, for example its genre, its plot, etc... Thus, movies released in the same period of time might be similar, whether they become successful or not.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="spotlight">
+  <div class="image">
+    <img src="{{ site.baseurl }}/images/best_weightedRating_Languages_proportion_over_time.png"
+         alt="{% if my_page.image_alt %}{{ my_page.image_alt }}{% else %}Image for {{ my_page.title | escape }}{% endif %}" />
+
+  </div>
+  <div class="content-wrap">
+
+    <div class="content">
+      <div style="text-align: left">
+        <h1>Comparison between the evolution over time of the language distribution computed on the overall data and the one computed on successful movies only</h1>
+        <p>We want to do a similar analysis as the one we did for the genres, but with the 10 most frequent languages from our dataset.</p>
+        <p>English seems to be a factor of success.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="spotlight">
+  <div class="image">
+    <img src="{{ site.baseurl }}/images/map1.png"
+         alt="{% if my_page.image_alt %}{{ my_page.image_alt }}{% else %}Image for {{ my_page.title | escape }}{% endif %}" />
+
+  </div>
+  <div class="content-wrap">
+
+    <div class="content">
+      <div style="text-align: left">
+        <h1>Is the success of a movie depending on the country it is produced in?</h1>
+        <p>In this other part of the project, we are interested in getting insights if movies have more chance to be successful depending on the country they are produced in. To visualize this, we plot the proportion of successful movies by country. More precisely, for each country, we compute the ratio of the number of successful movies, by the total number of movies produced in this country.</p>
+        <p>From the world map above, Libia and Mauritania are the counties with the highest proportion of successful movies. But from the following world map that represents the number of movies released per country, we can see that very few movies are released there. Thus, the high proportion of successful movies might be due to this country being more selective.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="spotlight">
+    <div class="image">
+      <img src="{{ site.baseurl }}/images/map2.png"
+           alt="{% if my_page.image_alt %}{{ my_page.image_alt }}{% else %}Image for {{ my_page.title | escape }}{% endif %}" />
+
+    </div>
+  <div class="content-wrap">
+
+    <div class="content">
+      <div style="text-align: left">
+        <p>Among the other countries, the parts of the world wit high proportion of successful movies seem to be the ones with a lot of movie releases (eg. North America, Europe). This might come from the fact that movie industries where many movies are produced, are maybe better developed.</p>
+        <p>To visualize the spatial distribution of movie releases, we plot the number of movies produced in each country.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="spotlight">
+
+    <div class="content">
+      <div style="text-align: left">
+        <h1>Feature analysis</h1>
+        <p>Working with the plethora of features that could be thought of about a movie could be a difficult task. Identifying the features which bring the most value to our analysis is important in order to center the work around them. A Random Forest was utilized for the task. The discoveries were intriguing, however as expected the most important feature would be the genre. Other descriptive properties turn out to be the Runtime, Budget as well as the Release date, hinting a trend in the rating of movies during time. Less impactful are features such as Language, Country and people working behind the scenes.</p>
+      </div>
+    </div>
+
+
+</section>
+
+<section class="spotlight">
+
+  <div class="content">
+    <div style="text-align: left">
+      <h1>What are the ingredients for a successful movie?</h1>
+      <p>To answer this question we ran a linear regression model using the most descriptive features, which we found (Runtime, Budget, Genre and Country). This was done in order to find the coefficients associated with each feature, the entire result can be observed in our notebook.</p>
+      <p>Тhe coefficient for runtime is rather high, indicating that people enjoy watching longer films. This could be caused by various factors, but the most prominent would be the fact that a story could be told best by giving more pieces of information to the audience and for that, the movie would need overall more time. The location of our movie could be the United Kingdom, Japan or New Zealand, as many of the household movies have been shot there throughout the years.</p>
+      <p>For genre, interestingly the Animation genre tends to outperform the rest, but Drama is a close second and may be more appropriate, depending on the target audience.</p>
+      <p>Directors play a major role in the creation of a movie, therefore selecting the right one is vital for its success.</p>
+      <p>If we decide to go with the Animation genre, then our data shows that in present days, Rich Moore's animations perform best (Zootopia, Wreck-it Ralph). Going to the greatest decade, we see that our choice will have to be Roger Allers (director of Lion King and The Little Mermaid).</p>
+      <p>Looking at Drama, Olivier Nakache and Éric Toledano are a clear duo, which we would like to have, considering movies from the past 10 years. However, the greatest decade would have to go to Frank Darabont in his period between 1990 and 2000, responsible for The Shawshank Redemption and The Green Mile.</p>
+      <p>Directors have their ups and downs throughout their careers, so if we want to be certain of the dependability of a director, then we would choose Yoshiaki Kawajiri for the Animation genre and Éric Rohmer for the Drama genre.</p>
+    </div>
+  </div>
+
+
+</section>
+
