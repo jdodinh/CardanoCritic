@@ -38,8 +38,7 @@ closing-para: _Your detailed closing_
 
 # on all pages (and the first three you list display with greeting, if included)
 social:
-  twitter: https://twitter.com/_username_
-  github: https://github.com/jdodinh
+  github: https://github.com/epfl-ada/ada-2022-project-cardano/
   # linkedin-square: https://linkedin.com/in/_username_
   # facebook-official: https://facebook.com/_username_
   #google-plus-square: https://plus.google.com/u/0/+_username_
